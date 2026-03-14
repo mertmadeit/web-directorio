@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <link width="32" height="32" src="https://img.icons8.com/sf-black-filled/64/1A1A1A/infinity.png" alt="infinity"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>Mert</title>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+    <header class="sticky top-0 z-20 px-4 pt-3">
+        <nav class="mx-auto w-full max-w-6xl rounded-full border border-black/10 bg-white/90 px-4 py-2 shadow-sm backdrop-blur">
+            <div class="flex items-center justify-between gap-3 md:grid md:grid-cols-[auto_1fr_auto] md:items-center md:gap-6">
+                <a href="#inicio" class="flex items-center gap-2.5">
+                    <img src="./assets/img/hero.jpg" alt="Foto del curso" class="h-10 w-10 rounded-full object-cover">
+                    <div class="leading-tight">
+                        <p class="text-base font-semibold text-black">Mert</p>
+                        <p class="text-xs text-gray-600">Made It</p>
+                    </div>
+                </a>
+
+                <ul class="hidden flex-wrap items-center justify-center gap-5 text-sm font-medium text-gray-700 md:flex md:gap-8">
+                    <li><a class="transition-colors hover:text-black" href="#inicio">Inicio</a></li>
+                    <li><a class="transition-colors hover:text-black" href="#proyectos">Proyectos</a></li>
+                </ul>
+
+                <a class="shrink-0 inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-black px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5" href="#proyectos">
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.49v-1.73c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.88 1.51 2.32 1.08 2.89.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.96 0-1.1.39-2 1.03-2.7-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03a9.45 9.45 0 0 1 5 0c1.9-1.3 2.74-1.03 2.74-1.03.56 1.39.21 2.41.1 2.67.64.7 1.03 1.6 1.03 2.7 0 3.86-2.34 4.7-4.57 4.95.36.31.68.91.68 1.85v2.74c0 .27.18.59.69.49A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                    <span>Repositorio</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio" class="mx-auto w-full max-w-6xl px-4 py-10 md:py-14">
+        <section class="rounded-3xl border shadow-md border-slate-200 bg-white p-6 md:p-8">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">WEB</p>
+            <h1 class="text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">ISC 233S0006 PW-A</h1>
+            <p class="mt-4 max-w-2xl text-sm text-slate-600 md:text-base">
+                Especialista en Bases de Datos
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#proyectos" class="inline-flex items-center gap-2 rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-sm">
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.49v-1.73c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.88 1.51 2.32 1.08 2.89.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.96 0-1.1.39-2 1.03-2.7-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03a9.45 9.45 0 0 1 5 0c1.9-1.3 2.74-1.03 2.74-1.03.56 1.39.21 2.41.1 2.67.64.7 1.03 1.6 1.03 2.7 0 3.86-2.34 4.7-4.57 4.95.36.31.68.91.68 1.85v2.74c0 .27.18.59.69.49A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                    <span>Github</span>
+                </a>
+                <a href="#proyectos" class="inline-flex items-center rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700">
+                    Ver proyectos
+                </a>
+            </div>
+        </section>
+
+        <section id="proyectos" class="mt-10 md:mt-14">
+            <div class="mb-5 flex items-end justify-between gap-4">
+                <h2 class="text-2xl font-bold md:text-3xl">Proyectos</h2>
+                <span class="text-sm text-slate-500">2 proyectos</span>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                <article class="rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-sm">
+                    <img src="./assets/img/ProyectoUnidad2.png" alt="Proyecto Agenda Escolar" class="mb-3 h-50 w-full rounded-xl object-cover ">
+                    <h3 class="text-lg font-semibold">Proyecto Unidad 2</h3>
+                    <p class="mt-2 text-sm text-slate-600">Diseñar y desarrollar un sitio web estático, personal y creativo sobre una temática de tu interés,
+                        aplicando correctamente los elementos básicos de HTML5 y CSS3.</p>
+                    <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                        <span class="rounded-full bg-slate-100 px-2 py-1">HTML</span>
+                        <span class="rounded-full bg-slate-100 px-2 py-1">CSS</span>
+                    </div>
+                    <a href="praticas/ProyectoU2/Index.html" class="mt-4 inline-flex rounded-full border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100">Ver proyecto</a>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-sm">
+                    <img src="./assets/img/404-Space.png" alt="Proyecto Biblioteca Digital" class="mb-3 h-50 w-full rounded-xl object-cover">
+                    <h3 class="text-lg font-semibold">CRUD</h3>
+                    <p class="mt-2 text-sm text-slate-600">CRUD de productos mediante php</p>
+                    <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                        <span class="rounded-full bg-slate-100 px-2 py-1">HTML</span>
+                        <span class="rounded-full bg-slate-100 px-2 py-1">PHP</span>
+                        <span class="rounded-full bg-slate-100 px-2 py-1">CSS</span>
+                        <span class="rounded-full bg-slate-100 px-2 py-1">BOOTSTRAP</span>
+                    </div>
+                    <a href="#proyectos" class="mt-4 inline-flex rounded-full border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100">Ver proyecto</a>
+                </article>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="mx-auto mt-8 w-full max-w-6xl border-t border-slate-200 px-4 pb-8 pt-6 text-center text-xs text-slate-500">
+        <p>Mert Made It - 2026</p>
+    </footer>
+</body>
+</html>
