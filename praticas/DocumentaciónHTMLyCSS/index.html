@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Tecnica de HTML y CSS</title>
+    <meta name="description"
+        content="Pagina educativa con referencia tecnica de HTML y CSS: etiquetas, selectores, propiedades y buenas practicas." />
+
+    <!-- Tipografia externa para jerarquia visual -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <!-- Navegacion principal por anclas -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <p class="brand">WebDocs</p>
+            <nav aria-label="Navegacion principal">
+                <ul class="nav-list">
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#selectores">Selectores</a></li>
+                    <li><a href="#insertar-css">Insertar CSS</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#extra">Extra</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Guia tecnica</p>
+                <h1>HTML y CSS desde fundamentos hasta uso real</h1>
+                <p class="lead">
+                    Documento de referencia con ejemplos claros para estructura web, estilos en cascada y
+                    decisiones de maquetacion responsiva.
+                </p>
+            </div>
+        </section>
+
+        <!-- PARTE 1: HTML -->
+        <section class="section" id="html">
+            <div class="container">
+                <h2>Parte 1: HTML</h2>
+
+                <article class="card">
+                    <h3>1. Introduccion: Que es HTML</h3>
+                    <p>
+                        HTML (HyperText Markup Language) es el lenguaje que define la estructura semantica de
+                        una pagina web. Con HTML se organiza el contenido en titulos, parrafos, tablas,
+                        formularios y bloques con significado para navegadores, buscadores y tecnologias de
+                        asistencia.
+                    </p>
+                    <p>
+                        No es un lenguaje de programacion; es un lenguaje de marcado. Su objetivo principal es
+                        describir <strong>que es cada parte del contenido</strong>, mientras que CSS define como
+                        se ve.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>2. Tabla de etiquetas HTML (30)</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre del tag</th>
+                                    <th>Descripcion</th>
+                                    <th>Ejemplo usando el tag</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>&lt;html&gt;</code></td>
+                                    <td>Raiz del documento HTML.</td>
+                                    <td><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;head&gt;</code></td>
+                                    <td>Contiene metadatos y enlaces externos.</td>
+                                    <td><code>&lt;head&gt;&lt;title&gt;Sitio&lt;/title&gt;&lt;/head&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;body&gt;</code></td>
+                                    <td>Incluye el contenido visible de la pagina.</td>
+                                    <td><code>&lt;body&gt;&lt;h1&gt;Hola&lt;/h1&gt;&lt;/body&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;title&gt;</code></td>
+                                    <td>Define el titulo de la pestana del navegador.</td>
+                                    <td><code>&lt;title&gt;Mi pagina&lt;/title&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;meta&gt;</code></td>
+                                    <td>Aporta datos como charset, viewport o descripcion.</td>
+                                    <td><code>&lt;meta charset="UTF-8" /&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;link&gt;</code></td>
+                                    <td>Vincula recursos externos, por ejemplo CSS.</td>
+                                    <td><code>&lt;link rel="stylesheet" href="main.css" /&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;header&gt;</code></td>
+                                    <td>Encabezado de pagina o seccion.</td>
+                                    <td><code>&lt;header&gt;&lt;h1&gt;Blog&lt;/h1&gt;&lt;/header&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;nav&gt;</code></td>
+                                    <td>Bloque de navegacion con enlaces.</td>
+                                    <td><code>&lt;nav&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;main&gt;</code></td>
+                                    <td>Contenido principal y unico del documento.</td>
+                                    <td><code>&lt;main&gt;&lt;article&gt;...&lt;/article&gt;&lt;/main&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;section&gt;</code></td>
+                                    <td>Agrupa contenido por tema.</td>
+                                    <td><code>&lt;section&gt;&lt;h2&gt;FAQ&lt;/h2&gt;&lt;/section&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;article&gt;</code></td>
+                                    <td>Unidad de contenido independiente.</td>
+                                    <td><code>&lt;article&gt;&lt;h2&gt;Noticia&lt;/h2&gt;&lt;/article&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;footer&gt;</code></td>
+                                    <td>Pie de pagina o de seccion.</td>
+                                    <td><code>&lt;footer&gt;&lt;p&gt;2026&lt;/p&gt;&lt;/footer&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;h1&gt;</code></td>
+                                    <td>Encabezado de mayor jerarquia.</td>
+                                    <td><code>&lt;h1&gt;Titulo principal&lt;/h1&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;p&gt;</code></td>
+                                    <td>Define un parrafo de texto.</td>
+                                    <td><code>&lt;p&gt;Texto de ejemplo.&lt;/p&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;a&gt;</code></td>
+                                    <td>Crea un enlace con atributo href.</td>
+                                    <td><code>&lt;a href="https://example.com"&gt;Ir&lt;/a&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;img&gt;</code></td>
+                                    <td>Inserta una imagen con texto alternativo.</td>
+                                    <td><code>&lt;img src="foto.jpg" alt="Foto" /&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;ul&gt;</code></td>
+                                    <td>Lista desordenada con vietas.</td>
+                                    <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;ol&gt;</code></td>
+                                    <td>Lista ordenada numerica.</td>
+                                    <td><code>&lt;ol&gt;&lt;li&gt;Paso&lt;/li&gt;&lt;/ol&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;li&gt;</code></td>
+                                    <td>Elemento de lista dentro de ul u ol.</td>
+                                    <td><code>&lt;li&gt;Elemento&lt;/li&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;table&gt;</code></td>
+                                    <td>Contenedor de datos tabulares.</td>
+                                    <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>
+                                    </td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;tr&gt;</code></td>
+                                    <td>Fila de una tabla.</td>
+                                    <td><code>&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;th&gt;</code></td>
+                                    <td>Celda de encabezado de tabla.</td>
+                                    <td><code>&lt;th scope="col"&gt;Nombre&lt;/th&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;td&gt;</code></td>
+                                    <td>Celda de datos de tabla.</td>
+                                    <td><code>&lt;td&gt;Valor&lt;/td&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;form&gt;</code></td>
+                                    <td>Contiene controles de entrada de usuario.</td>
+                                    <td><code>&lt;form action="/enviar" method="post"&gt;&lt;/form&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;label&gt;</code></td>
+                                    <td>Etiqueta descriptiva para un campo.</td>
+                                    <td><code>&lt;label for="email"&gt;Correo&lt;/label&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;input&gt;</code></td>
+                                    <td>Entrada de datos: texto, correo, numero, etc.</td>
+                                    <td><code>&lt;input type="email" id="email" /&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;button&gt;</code></td>
+                                    <td>Boton interactivo.</td>
+                                    <td><code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;select&gt;</code></td>
+                                    <td>Lista desplegable de opciones.</td>
+                                    <td><code>&lt;select&gt;&lt;option&gt;A&lt;/option&gt;&lt;/select&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;option&gt;</code></td>
+                                    <td>Opcion dentro de un select.</td>
+                                    <td><code>&lt;option value="mx"&gt;Mexico&lt;/option&gt;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;textarea&gt;</code></td>
+                                    <td>Campo de texto multilinea.</td>
+                                    <td><code>&lt;textarea rows="3"&gt;&lt;/textarea&gt;</code></td>
+                                    <td><span class="video">Ver video</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="count">Total documentado: <strong>30 etiquetas HTML</strong>.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PARTE 2: CSS -->
+        <section class="section" id="css">
+            <div class="container">
+                <h2>Parte 2: CSS</h2>
+
+                <article class="card">
+                    <h3>1. Que es CSS</h3>
+                    <p>
+                        CSS (Cascading Style Sheets) controla la presentacion visual de un documento HTML.
+                        Define color, espaciado, tipografia, alineacion y distribucion de elementos en
+                        pantalla. Se llama "en cascada" porque varias reglas pueden aplicar al mismo elemento
+                        y el navegador decide cual gana segun prioridad, especificidad y orden de declaracion.
+                    </p>
+                </article>
+
+                <article class="card" id="css-sintaxis">
+                    <h3>2. Sintaxis y estructura de una regla CSS</h3>
+                    <p>
+                        Una regla CSS tiene un <strong>selector</strong> y un bloque de declaraciones. Cada
+                        declaracion combina una <strong>propiedad</strong> y un <strong>valor</strong>.
+                    </p>
+                    <pre><code>.card {
+  border: 1px solid #222;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+/* selector: .card */
+/* propiedad: border | valor: 1px solid #222 */</code></pre>
+                </article>
+
+                <article class="card" id="selectores">
+                    <h3>3. Tipos de selectores</h3>
+
+                    <h4>Selectores simples</h4>
+                    <p>Apuntan por nombre de etiqueta, clase, id o universal.</p>
+                    <pre><code>p { color: #222; }
+.alerta { border-left: 4px solid #111; }
+#menu { position: sticky; }
+* { box-sizing: border-box; }</code></pre>
+
+                    <h4>Selectores combinadores</h4>
+                    <p>Relacionan elementos por su posicion en el DOM.</p>
+                    <pre><code>nav a { text-decoration: none; }    /* descendiente */
+ul > li { margin-bottom: .5rem; }   /* hijo directo */
+h2 + p { margin-top: 0; }           /* hermano adyacente */
+h2 ~ p { color: #444; }             /* hermano general */</code></pre>
+
+                    <h4>Selectores de pseudoclase</h4>
+                    <p>Aplican segun estado o posicion del elemento.</p>
+                    <pre><code>a:hover { text-decoration: underline; }
+tr:nth-child(even) { background: #f3f3f3; }
+input:not([type="submit"]) { width: 100%; }
+button:focus { outline: 2px solid #000; }</code></pre>
+
+                    <h4>Selectores de pseudoelemento</h4>
+                    <p>Permiten estilizar partes especificas de un elemento.</p>
+                    <pre><code>h3::before { content: "# "; }
+p::first-line { font-weight: 600; }
+p::first-letter { font-size: 1.3em; }</code></pre>
+
+                    <h4>Selectores de atributo</h4>
+                    <p>Seleccionan segun presencia o patron de valor en atributos.</p>
+                    <pre><code>[required] { border-color: #111; }
+input[type="email"] { background: #fafafa; }
+a[href^="https"] { font-weight: 600; }</code></pre>
+                </article>
+
+                <article class="card" id="insertar-css">
+                    <h3>4. Formas de insertar CSS</h3>
+
+                    <h4>CSS externo (recomendado)</h4>
+                    <pre><code>&lt;link rel="stylesheet" href="assets/css/main.css" /&gt;</code></pre>
+
+                    <h4>CSS interno / embebido</h4>
+                    <pre><code>&lt;style&gt;
+  h1 { color: #111; }
+&lt;/style&gt;</code></pre>
+
+                    <h4>CSS en linea (inline)</h4>
+                    <pre><code>&lt;p style="color: #111; margin-top: 12px;"&gt;Texto&lt;/p&gt;</code></pre>
+                </article>
+
+                <article class="card" id="propiedades">
+                    <h3>5. Tabla de propiedades CSS mas utilizadas (30)</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre de la propiedad</th>
+                                    <th>Descripcion</th>
+                                    <th>Ejemplo de uso</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>font-family</code></td>
+                                    <td>Fuente principal del texto.</td>
+                                    <td><code>font-family: "Source Sans 3", sans-serif;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>font-size</code></td>
+                                    <td>Tamano de letra.</td>
+                                    <td><code>font-size: 1rem;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>font-weight</code></td>
+                                    <td>Grosor de la fuente.</td>
+                                    <td><code>font-weight: 600;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>line-height</code></td>
+                                    <td>Altura de linea.</td>
+                                    <td><code>line-height: 1.6;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>color</code></td>
+                                    <td>Color del texto.</td>
+                                    <td><code>color: #1f1f1f;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-align</code></td>
+                                    <td>Alineacion horizontal del texto.</td>
+                                    <td><code>text-align: center;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-decoration</code></td>
+                                    <td>Decoracion de texto.</td>
+                                    <td><code>text-decoration: underline;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-transform</code></td>
+                                    <td>Transforma mayusculas/minusculas.</td>
+                                    <td><code>text-transform: uppercase;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>background-color</code></td>
+                                    <td>Color de fondo.</td>
+                                    <td><code>background-color: #f3f3f3;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>background-image</code></td>
+                                    <td>Imagen o degradado de fondo.</td>
+                                    <td><code>background-image: linear-gradient(#fff, #eee);</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>background-size</code></td>
+                                    <td>Tamano de imagen de fondo.</td>
+                                    <td><code>background-size: cover;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>background-position</code></td>
+                                    <td>Posicion del fondo.</td>
+                                    <td><code>background-position: center;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>background-repeat</code></td>
+                                    <td>Repeticion del fondo.</td>
+                                    <td><code>background-repeat: no-repeat;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>opacity</code></td>
+                                    <td>Transparencia del elemento.</td>
+                                    <td><code>opacity: 0.9;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>width</code></td>
+                                    <td>Ancho del elemento.</td>
+                                    <td><code>width: 100%;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>height</code></td>
+                                    <td>Altura del elemento.</td>
+                                    <td><code>height: 64px;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>max-width</code></td>
+                                    <td>Ancho maximo permitido.</td>
+                                    <td><code>max-width: 1100px;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>margin</code></td>
+                                    <td>Espacio externo.</td>
+                                    <td><code>margin: 0 auto;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>padding</code></td>
+                                    <td>Espacio interno.</td>
+                                    <td><code>padding: 1rem;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>border</code></td>
+                                    <td>Borde del elemento.</td>
+                                    <td><code>border: 1px solid #d7d7d7;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>border-radius</code></td>
+                                    <td>Redondea esquinas.</td>
+                                    <td><code>border-radius: .5rem;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>box-sizing</code></td>
+                                    <td>Modelo de calculo de caja.</td>
+                                    <td><code>box-sizing: border-box;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>display</code></td>
+                                    <td>Modo de visualizacion.</td>
+                                    <td><code>display: grid;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>position</code></td>
+                                    <td>Tipo de posicionamiento.</td>
+                                    <td><code>position: sticky;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>top</code></td>
+                                    <td>Desplazamiento desde arriba.</td>
+                                    <td><code>top: 0;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>right</code></td>
+                                    <td>Desplazamiento desde la derecha.</td>
+                                    <td><code>right: 0;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>z-index</code></td>
+                                    <td>Orden de apilado.</td>
+                                    <td><code>z-index: 10;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>flex-direction</code></td>
+                                    <td>Direccion del eje principal en flex.</td>
+                                    <td><code>flex-direction: column;</code></td>
+                                    <td>Ver video</td>
+                                </tr>
+                                <tr>
+                                    <td><code>justify-content</code></td>
+                                    <td>Alinea items en eje principal.</td>
+                                    <td><code>justify-content: space-between;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                                <tr>
+                                    <td><code>align-items</code></td>
+                                    <td>Alinea items en eje cruzado.</td>
+                                    <td><code>align-items: center;</code></td>
+                                    <td>No disponible</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="count">Total documentado: <strong>30 propiedades CSS</strong>.</p>
+                </article>
+
+                <article class="card" id="extra">
+                    <h3>6. Seccion adicional</h3>
+
+                    <h4>Especificidad CSS</h4>
+                    <p>
+                        Cuando dos reglas apuntan al mismo elemento, gana la de mayor especificidad. En forma
+                        simplificada: <code>id &gt; clase/atributo/pseudoclase &gt; etiqueta</code>.
+                    </p>
+                    <pre><code>p { color: gray; }          /* 0,0,1 */
+.texto { color: green; }    /* 0,1,0 */
+#intro { color: black; }    /* 1,0,0 */</code></pre>
+
+                    <h4>Media queries para responsividad</h4>
+                    <p>
+                        Permiten ajustar el diseno segun el ancho de pantalla. Se recomienda enfoque
+                        mobile-first: definir primero estilo movil y ampliar para pantallas grandes.
+                    </p>
+                    <pre><code>@media (min-width: 768px) {
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}</code></pre>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Guia tecnica de HTML y CSS sin frameworks.</p>
+            <a href="#top">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+
+</html>
